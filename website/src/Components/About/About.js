@@ -18,6 +18,8 @@ function About() {
                 You can find out about his latest reaserch and security projects here. <br />
                 Outside of cyber security, Aleksa competes in jiu jitsu and enjoys jazz. <br />
             </p>
+            <h1>Aleksa's Job Experiance</h1>
+            <h1>Aleksa's Links</h1>
         </div>
     );
 }
