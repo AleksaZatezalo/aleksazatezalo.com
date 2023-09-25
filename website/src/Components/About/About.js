@@ -6,7 +6,7 @@ import profile from "./profile.jpg";
 function About() {
     return (
         <div>
-            <h1>About Me</h1>
+            <h1>About Aleksa</h1>
             <div class="profile center">
                     <img
                         src={profile}
@@ -19,8 +19,6 @@ function About() {
                 Outside of cyber security, Aleksa competes in jiu jitsu and enjoys jazz. <br />
             </p>
         </div>
-        
-        
     );
 }
 

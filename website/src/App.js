@@ -2,14 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import About
- from './Components/About/About';
+import About from './Components/About/About';
+import Footer from './Components/Footer/Footer';
 function App() {
   return (
-    <React.Fragment>
+
+    <div className="page-container">
+    <div className="content-wrap">
       <Navbar/>
       <About/>
-    </React.Fragment>
+      </div>
+      <Footer/>
+    </div>
   );
 }
 

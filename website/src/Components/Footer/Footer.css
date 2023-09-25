@@ -1,0 +1,22 @@
+.main-footer{
+    color: white;
+    background-color: #29335C;
+    padding-top: 3em;;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.col {
+    padding-right: 50px;
+}
+
+.list-unstyled {
+    padding-left: 25px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
