@@ -8,45 +8,56 @@ import 'react-vertical-timeline-component/style.min.css';
 function About() {
     return (
         <div>
-            <h1>About Aleksa</h1>
-
             <div className='container'>
-                    <div class="profile center">
-                            <img
-                                src={profile}
-                                alt="Profile">
-                            </img>
+            <h1>About Aleksa</h1>
+                    <div className="row">
+                        <div className="column">
+                        
+                            <div class="profile">
+                                <img
+                                    src={profile}
+                                    alt="Profile">
+                                </img>
+                            </div>
+                            <div className="row">
+                                <p className>
+                                            Aleksa Zatezalo is a cyber security reasercher & penetration tester.
+                                            You can find out about his latest reaserch and security projects here.
+                                            Outside of cyber security, Aleksa competes in jiu jitsu and enjoys jazz. <br />
+                                </p>
+                            </div>
+
+                            </div>
+                        <div className="column">
+                            <div className="experiance" width='100px'> 
+                            <VerticalTimeline lineColor="#5767aa">
+                                    <VerticalTimelineElement className="vertical-timeline-element--education" 
+                                    iconStyle={{background:'#29335C', color:'#fff'}} 
+                                    icon={<FaGraduationCap
+                                    date='2016-2021'/>}>
+                                        <h3>Got a Bacholers of Computer Science </h3>
+                                        <p>University of Toronto - 2016 to 2021</p>
+                                    </VerticalTimelineElement>
+                                    <VerticalTimelineElement className="vertical-timeline-element--education" 
+                                    iconStyle={{background:'#29335C', color:'#fff'}} 
+                                    icon={<FaGraduationCap
+                                    date='2020'/>}>
+                                        <h3>Obtained the CEHv10</h3>
+                                        <p>Finished on December 30th 2020</p>
+                                    </VerticalTimelineElement>
+                                    <VerticalTimelineElement className="vertical-timeline-element--education" 
+                                    iconStyle={{background:'#29335C', color:'#fff'}} 
+                                    icon={<FaAws
+                                    date='2021'/>}>
+                                        <h3>Became a Cloud Security Analyst</h3>
+                                        <p>Started with Deloitte September 2021</p>
+                                    </VerticalTimelineElement>
+                                </VerticalTimeline>
+                            </div>     
                         </div>
-                            <p className="center">
-                                Aleksa Zatezalo is a cyber security reasercher & penetration tester. <br />
-                                You can find out about his latest reaserch and security projects here. <br />
-                                Outside of cyber security, Aleksa competes in jiu jitsu and enjoys jazz. <br />
-                            </p>
-                    <div className="experiance center" width='100px'> 
-                          <VerticalTimeline lineColor="#000">
-                                <VerticalTimelineElement className="vertical-timeline-element--education" 
-                                iconStyle={{background:'#000', color:'#fff'}} 
-                                icon={<FaGraduationCap
-                                date='2016-2021'/>}>
-                                    <h3>Computer Science</h3>
-                                    <p>The University of Toronto</p>
-                                </VerticalTimelineElement>
-                                <VerticalTimelineElement className="vertical-timeline-element--education" 
-                                iconStyle={{background:'#000', color:'#fff'}} 
-                                icon={<FaGraduationCap
-                                date='2020'/>}>
-                                    <h3>Obtained the CEHv10</h3>
-                                    <p>EC-Council</p>
-                                </VerticalTimelineElement>
-                                <VerticalTimelineElement className="vertical-timeline-element--education" 
-                                iconStyle={{background:'#000', color:'#fff'}} 
-                                icon={<FaAws
-                                date='2021'/>}>
-                                    <h3>Cloud Security Analyst</h3>
-                                    <p>Deloitte</p>
-                                </VerticalTimelineElement>
-                            </VerticalTimeline>
-                        </div>     
+                    </div>
+                    
+                    
                 </div>
                 
             </div>
