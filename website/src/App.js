@@ -13,7 +13,6 @@ function App() {
     <div className="content-wrap">
       <Navbar/>
       <About/>
-      <Projects/>
       </div>
       <Footer/>
     </div>

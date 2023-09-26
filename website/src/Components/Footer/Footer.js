@@ -4,7 +4,12 @@ import "./Footer.css"
 function Footer() {
     return (
         <div className='main-footer'>
-            <div className='container'>
+             <div className='row'>
+                    <p className='col-sm center'>
+                        &copy;{new Date().getFullYear()} Aleksa Zatezalo | All Rights Reserved
+                    </p>
+                </div>
+            {/* <div className='container'>
                 <div className='row'>
                     <div className='col'>
                         <h4>
@@ -36,12 +41,8 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className='row'>
-                    <p className='col-sm center'>
-                        &copy;{new Date().getFullYear()} Aleksa Zatezalo | All Rights Reserved
-                    </p>
-                </div>
-            </div>
+               
+            </div> */}
         </div>
     );
 }

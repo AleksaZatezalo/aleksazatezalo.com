@@ -20,6 +20,7 @@ function About() {
                                 </img>
                             </div>
                             <div className="row">
+                                
                                 <p className>
                                             Aleksa Zatezalo is a cyber security reasercher & penetration tester.
                                             You can find out about his latest reaserch and security projects here.
@@ -36,14 +37,14 @@ function About() {
                                     icon={<FaGraduationCap
                                     date='2016-2021'/>}>
                                         <h3>Got a Bacholers of Computer Science </h3>
-                                        <p>University of Toronto - 2016 to 2021</p>
+                                        <p>University of Toronto 2016 to 2021</p>
                                     </VerticalTimelineElement>
                                     <VerticalTimelineElement className="vertical-timeline-element--education" 
                                     iconStyle={{background:'#29335C', color:'#fff'}} 
                                     icon={<FaGraduationCap
                                     date='2020'/>}>
                                         <h3>Obtained the CEHv10</h3>
-                                        <p>Finished on December 30th 2020</p>
+                                        <p>Finished in December 2020</p>
                                     </VerticalTimelineElement>
                                     <VerticalTimelineElement className="vertical-timeline-element--education" 
                                     iconStyle={{background:'#29335C', color:'#fff'}} 
