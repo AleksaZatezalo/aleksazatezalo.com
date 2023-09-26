@@ -4,6 +4,8 @@ import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
+import Projects from './Components/Projects/Projects';
+
 function App() {
   return (
 
@@ -11,6 +13,7 @@ function App() {
     <div className="content-wrap">
       <Navbar/>
       <About/>
+      <Projects/>
       </div>
       <Footer/>
     </div>
