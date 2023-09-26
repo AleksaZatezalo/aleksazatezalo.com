@@ -9,10 +9,10 @@ function About() {
     return (
         <div>
             <div className='container'>
-            <h1>About Aleksa</h1>
                     <div className="row">
                         <div className="column">
-                        
+                        <h1>About Aleksa</h1>
+
                             <div class="profile">
                                 <img
                                     src={profile}
