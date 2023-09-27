@@ -1,5 +1,7 @@
 import {useRef} from "react";
 import {FaBars, FaTimes, FaGraduationCap, FaAws} from "react-icons/fa";
+import {faTwitter, faMedium, faGithub, faGooglePlay, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import"./About.css";
 import profile from "./profile.jpg";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
@@ -57,7 +59,23 @@ function About() {
                             </div>     
                         </div>
                     </div>
-                    
+                    <div>
+                        <a href="https://twitter.com/ZatezaloAleksa">
+                            <FontAwesomeIcon icon={faTwitter} />
+                        </a>
+                        <a href="https://aleksazatezalo.medium.com/">
+                            <FontAwesomeIcon icon={faMedium} />
+                        </a>
+                        <a href="https://github.com/AleksaZatezalo">
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                        <a href="https://play.google.com/store/apps/developer?id=Aleksa+Zatezalo">
+                            <FontAwesomeIcon icon={faGooglePlay} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/aleksa-zatezalo-39a891150/">
+                            <FontAwesomeIcon icon={faLinkedinIn} />
+                        </a>
+                    </div>
                     
                 </div>
                 
