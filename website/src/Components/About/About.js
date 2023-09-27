@@ -2,6 +2,7 @@ import {useRef} from "react";
 import {FaBars, FaTimes, FaGraduationCap, FaAws} from "react-icons/fa";
 import {faTwitter, faMedium, faGithub, faGooglePlay, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import"./About.css";
 import profile from "./profile.jpg";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
@@ -10,10 +11,12 @@ import 'react-vertical-timeline-component/style.min.css';
 function About() {
     return (
         <div>
+            <h1>About Aleksa</h1>
+
             <div className='container'>
+
                     <div className="row">
                         <div className="column">
-                        <h1>About Aleksa</h1>
 
                             <div class="profile">
                                 <img
@@ -53,13 +56,15 @@ function About() {
                                     icon={<FaAws
                                     date='2021'/>}>
                                         <h3>Became a Cloud Security Analyst</h3>
-                                        <p>Started with Deloitte September 2021</p>
+                                        <p>Started at Deloitte September 2021</p>
                                     </VerticalTimelineElement>
                                 </VerticalTimeline>
                             </div>     
                         </div>
                     </div>
-                    <div>
+                    
+                </div>
+                <div className="singleCol social-media-icons d-flex justify-content-evenly">
                         <a href="https://twitter.com/ZatezaloAleksa">
                             <FontAwesomeIcon icon={faTwitter} />
                         </a>
@@ -75,10 +80,7 @@ function About() {
                         <a href="https://www.linkedin.com/in/aleksa-zatezalo-39a891150/">
                             <FontAwesomeIcon icon={faLinkedinIn} />
                         </a>
-                    </div>
-                    
                 </div>
-                
             </div>
 
            

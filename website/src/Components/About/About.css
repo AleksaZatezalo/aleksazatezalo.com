@@ -40,5 +40,16 @@ img:hover {
 
 .h1 {
     margin-top: 3rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
+}
+
+.social-media-icons a {
+    color: #29335C;
+    font-size: 2rem;
+    margin-top: 25rem;
+}
+
+.singleCol {
+    max-width: 750px;
+    margin: 0 auto;
 }
