@@ -1,0 +1,9 @@
+div.post img {
+    max-width: 100%;
+    border-radius: 100%;
+}
+
+div.post {
+    display: flex;
+    margin-top: 1rem;
+}
