@@ -11,7 +11,7 @@ import 'react-vertical-timeline-component/style.min.css';
 function About() {
     return (
         <div>
-            <h1>About Aleksa</h1>
+            <h1 className="text-center">About Aleksa</h1>
 
             <div className='container'>
 
