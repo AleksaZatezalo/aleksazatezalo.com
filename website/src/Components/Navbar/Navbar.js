@@ -6,9 +6,8 @@ function Navbar() {
 
     return (
         <header>
-            <h3>Welcome to Aleksa's Site</h3>
+            <h3>Welcome to Aleksa's Blog</h3>
             <nav ref={navRef}>
-                <a href ="/#">Home</a>
                 <a href ="/#">Blog</a>
                 <a href ="/#">About Aleksa</a>
             </nav>

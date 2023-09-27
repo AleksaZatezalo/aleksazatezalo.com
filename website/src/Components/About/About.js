@@ -11,12 +11,12 @@ import 'react-vertical-timeline-component/style.min.css';
 function About() {
     return (
         <div>
-            <h1 className="text-center">About Aleksa</h1>
 
             <div className='container'>
 
                     <div className="row">
                         <div className="column">
+                        <h1 className>About Aleksa</h1>
 
                             <div class="profile">
                                 <img
