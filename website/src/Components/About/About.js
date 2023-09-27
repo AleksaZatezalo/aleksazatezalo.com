@@ -1,6 +1,6 @@
 import {useRef} from "react";
 import {FaBars, FaTimes, FaGraduationCap, FaAws} from "react-icons/fa";
-import {faTwitter, faMedium, faGithub, faGooglePlay, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import {faTwitter, faMedium, faGithub, faGooglePlay, faLinkedinIn, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import"./About.css";
@@ -79,6 +79,9 @@ function About() {
                         </a>
                         <a href="https://www.linkedin.com/in/aleksa-zatezalo-39a891150/">
                             <FontAwesomeIcon icon={faLinkedinIn} />
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCs3htMGLR720HXC3jBNWGxA">
+                            <FontAwesomeIcon icon={faYoutube} />
                         </a>
                 </div>
             </div>
