@@ -19,7 +19,7 @@ function About() {
                         <h1 className>About Aleksa</h1>
 
                             <div class="profile">
-                                <img
+                                <img className="profile"
                                     src={profile}
                                     alt="Profile">
                                 </img>

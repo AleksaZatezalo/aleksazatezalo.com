@@ -8,19 +8,13 @@
     width: 50%;
 }
 
-img {
+.profile {
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    border: 5px solid #29335C;
+    border: 1px solid #29335C;
 }
 
-img:hover {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    border: 7px solid #5767aa;
-}
 
 .column p {
     text-align: left;

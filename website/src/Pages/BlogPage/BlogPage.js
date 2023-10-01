@@ -12,26 +12,14 @@ export default function BlogPage() {
       <Navbar/>
       <h1>Aleksa Zatezalo's Blog</h1>
       <div className='post'>
-        <img src='https://cdn.shopify.com/s/files/1/0140/9374/6262/products/LM4_1366x1366_crop_center.png.webp?v=1622761499' alt="" className='featured-img'/>
-        <div className='content'>
+      
+        <div className='texts'>
           <h2>Mow your god damn lawn</h2>
-          <p>Hello. This is a post about mowing your lawn. Do it for the wamen.</p>
-        </div>
-      </div>
-
-      <div className='post'>
-        <img src='https://cdn.shopify.com/s/files/1/0140/9374/6262/products/LM4_1366x1366_crop_center.png.webp?v=1622761499' alt="" className='featured-img'/>
-        <div className='content'>
-          <h2>Mow your god damn lawn</h2>
-          <p>Hello. This is a post about mowing your lawn. Do it for the wamen.</p>
-        </div>
-      </div>
-
-      <div className='post'>
-        <img src='https://cdn.shopify.com/s/files/1/0140/9374/6262/products/LM4_1366x1366_crop_center.png.webp?v=1622761499' alt="" className='featured-img'/>
-        <div className='content'>
-          <h2>Mow your god damn lawn</h2>
-          <p>Hello. This is a post about mowing your lawn. Do it for the wamen.</p>
+          <p className='info'>
+            <a className='author'>Aleksa Zatezalo</a>
+            <time>2023-09</time>
+          </p>
+          <p className='summary'>Hello. This is a post about mowing your lawn. Do it for the wamen.</p>
         </div>
       </div>
       </div>
