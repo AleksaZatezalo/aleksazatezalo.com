@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 
-export default function LoginPage() {
+export default function RegisterPage() {
   return (
 
     <div className="page-container">
@@ -12,7 +12,7 @@ export default function LoginPage() {
           <form action="">
             <input type='text' placeholder='username'/>
             <input type='password' placeholder='password'/>
-            <button>Login</button>
+            <button>Register</button>
           </form>
       </div>
       <Footer/>
