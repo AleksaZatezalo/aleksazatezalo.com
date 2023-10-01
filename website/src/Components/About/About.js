@@ -1,5 +1,6 @@
 import {useRef} from "react";
 import {FaBars, FaTimes, FaGraduationCap, FaAws} from "react-icons/fa";
+import {GiConwayLifeGlider} from "react-icons/gi"
 import {faTwitter, faMedium, faGithub, faGooglePlay, faLinkedinIn, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -57,6 +58,13 @@ function About() {
                                     date='2021'/>}>
                                         <h3>Became a Cloud Security Analyst</h3>
                                         <p>Started at Deloitte September 2021</p>
+                                    </VerticalTimelineElement>
+                                    <VerticalTimelineElement className="vertical-timeline-element--education" 
+                                    iconStyle={{background:'#29335C', color:'#fff'}} 
+                                    icon={<GiConwayLifeGlider
+                                    date='2022'/>}>
+                                        <h3>Started Hacking</h3>
+                                        <p>January 2022</p>
                                     </VerticalTimelineElement>
                                 </VerticalTimeline>
                             </div>     
