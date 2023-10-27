@@ -16,7 +16,7 @@ export default function LoginPage() {
       body: JSON.stringify({username, password}),
       headers: {'Content-Type':'application/json'},
     })
-  }
+  };
 
   return (
     <div className="page-container" onSubmit={login}>
