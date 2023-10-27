@@ -1,17 +1,18 @@
-import {useEffect, useRef, useState} from "react";
 import"./Navbar.css";
+import {useContext, useEffect, useRef, useState} from "react";
+import {UserContext} from "../../UserContext";
 
 function Navbar() {
     const navRef = useRef();
-    const [username, setUsername] = useState();
+    const {setUserInfo,userInfo} = useContext(UserContext);
     useEffect(() => {
         fetch('http://localhost:4000/profile', {
             credentials: 'include',
         }).then(response => {
             response.json().then(userInfo => {
-                setUsername(userInfo.username);
-            })
-        })
+            setUserInfo(userInfo);
+            });
+        });
     }, []);
 
 function logout() {
@@ -21,6 +22,7 @@ function logout() {
     });
   }
 
+  const username = userInfo?.username;
 
     return (
         <header>
@@ -37,7 +39,7 @@ function logout() {
                 {username && (
                     <>
                         <a href ="/create">Wright A New Post</a>
-                        <a onClick={logout}>Logout</a>
+                        <a href="/blog" onClick={logout}>Logout</a>
                     </>
                 )}
                 

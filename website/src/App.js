@@ -5,6 +5,8 @@ import HomePage from './Pages/BlogPage/HomePage';
 import AboutPage from "./Pages/AboutPage/AboutPage"
 import LoginPage from './Pages/LoginPage/LoginPage';
 import RegisterPage from './Pages/LoginPage/Register';
+import CreatePost from './Pages/CreatePage/CreatePost';
+import { UserContextProvider } from './UserContext';
 import './App.css';
 
 function App() {
@@ -12,15 +14,19 @@ function App() {
     <>
     
       <div>
-        <BrowserRouter>
-          <Routes>
-            <Route index element={<HomePage/>} />
-            <Route path="/blog" index element={<BlogPage/>} />
-            <Route path="/about" index element={<AboutPage/>} />
-            <Route path="/login" index element={<LoginPage/>}/>
-            <Route path="/register" index element={<RegisterPage/>}/>
-          </Routes>
-        </BrowserRouter>
+        <UserContextProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route index element={<HomePage/>} />
+              <Route path="/blog" index element={<BlogPage/>} />
+              <Route path="/about" index element={<AboutPage/>} />
+              <Route path="/login" index element={<LoginPage/>}/>
+              <Route path="/register" index element={<RegisterPage/>}/>
+              <Route path="/create" index element={<CreatePost/>}/>
+            </Routes>
+          </BrowserRouter>
+        </UserContextProvider>
+        
     </div>
     </>
   );
