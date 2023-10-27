@@ -1,7 +1,7 @@
 import {useRef} from "react";
 import {FaBars, FaTimes, FaGraduationCap, FaAws} from "react-icons/fa";
 import {GiConwayLifeGlider} from "react-icons/gi"
-import {faTwitter, faMedium, faGithub, faGooglePlay, faLinkedinIn, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import {faTwitter, faMedium, faGithub, faGooglePlay, faLinkedinIn, faYoutube, faSpotify} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import"./About.css";
@@ -90,6 +90,9 @@ function About() {
                         </a>
                         <a href="https://www.youtube.com/channel/UCs3htMGLR720HXC3jBNWGxA">
                             <FontAwesomeIcon icon={faYoutube} />
+                        </a>
+                        <a href="https://open.spotify.com/user/lmzrdyu7mww7s1og3wsa3u1n5">
+                            <FontAwesomeIcon icon={faSpotify} />
                         </a>
                 </div>
             </div>
