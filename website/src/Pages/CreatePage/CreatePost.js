@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
 import ReactQuill from "react-quill";
+import Footer from '../../Components/Footer/Footer'
 import 'react-quill/dist/quill.snow.css'
 import {useContext, useState} from "react";
 import { Navigate } from 'react-router-dom';
@@ -48,23 +49,29 @@ export default function CreatePost() {
     
 
     return (
-        <div className="content-wrap">
-            <Navbar/>
-            <form onSubmit={createNewPost}>
-                <input type="title" 
-                        placeholder={"Title"} 
-                        onChange={ev => setTitle(ev.target.value)}/>
-                <input type="summary"
-                        placeholder={"Summary"}
-                        value={summary}
-                        onChange={ev => setSummary(ev.target.value)}/>
-                <ReactQuill value={content} 
-                    onChange={newValue => setContent(newValue)} 
-                    modules={modules} 
-                    formats={formats} 
-                    style={{marginBottpm:'50px'}}/>
-                <button style={{marginTop:'5px'}}>Create Post</button>
-            </form>
+
+        <div className="page-container">
+                <div className="content-wrap">
+                <Navbar/>
+                    <form onSubmit={createNewPost}>
+                        <input type="title" 
+                                placeholder={"Title"} 
+                                onChange={ev => setTitle(ev.target.value)}/>
+                        <input type="summary"
+                                placeholder={"Summary"}
+                                value={summary}
+                                onChange={ev => setSummary(ev.target.value)}/>
+                        <ReactQuill value={content} 
+                            onChange={newValue => setContent(newValue)} 
+                            modules={modules} 
+                            formats={formats} 
+                            />
+                        <button style={{marginTop:'5px'}}>Create Post</button>
+                    </form>
+                </div>
+    
+            <Footer/>
         </div>
+  
     );
 }
