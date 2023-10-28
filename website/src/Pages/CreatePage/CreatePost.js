@@ -44,9 +44,9 @@ export default function CreatePost() {
         body: data,
         credentials: 'include',
       });
-    }
-  
-    
+    }    
+
+    // Make Flex box fixed height..... 
 
     return (
 
@@ -64,7 +64,7 @@ export default function CreatePost() {
                         <ReactQuill value={content} 
                             onChange={newValue => setContent(newValue)} 
                             modules={modules} 
-                            formats={formats} 
+                            formats={formats}
                             />
                         <button style={{marginTop:'5px'}}>Create Post</button>
                     </form>
