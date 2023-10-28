@@ -28,15 +28,27 @@ const formats = [
     'link', 'image'
 ]
 
+
 export default function CreatePost() {
     const [title, setTitle] = useState('');
     const [summary, setSummary] = useState('');
     const [content, setContent] = useState('');
+    function createNewPost(ev) {
+        const data = FormData()
+        data.set('title', title);
+        data.set('summary', summary);
+        data.set('content', content);
+        ev.preventDefault();
+        fetch("http://localhost:4000/post", {
+            method: 'POST',
+            body: data
+        })
+    }
 
     return (
         <div className="content-wrap">
             <Navbar/>
-            <form>
+            <form onSubmit={createNewPost}>
                 <input type="title" 
                         placeholder={"Title"} 
                         onChange={ev => setTitle(ev.target.value)}/>
@@ -53,4 +65,4 @@ export default function CreatePost() {
             </form>
         </div>
     );
-}
+};
