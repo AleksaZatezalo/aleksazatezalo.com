@@ -1,7 +1,6 @@
 
 import React from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
-import Footer from '../../Components/Footer/Footer';
 import ReactQuill from "react-quill";
 import 'react-quill/dist/quill.snow.css'
 import {useContext, useState} from "react";
@@ -30,20 +29,23 @@ const formats = [
 
 
 export default function CreatePost() {
-    const [title, setTitle] = useState('');
-    const [summary, setSummary] = useState('');
-    const [content, setContent] = useState('');
-    function createNewPost(ev) {
-        const data = FormData()
-        data.set('title', title);
-        data.set('summary', summary);
-        data.set('content', content);
-        ev.preventDefault();
-        fetch("http://localhost:4000/post", {
-            method: 'POST',
-            body: data
-        })
+    const [title,setTitle] = useState('');
+    const [summary,setSummary] = useState('');
+    const [content,setContent] = useState('');
+    async function createNewPost(ev) {
+      const data = new FormData();
+      data.set('title', title);
+      data.set('summary', summary);
+      data.set('content', content);
+      ev.preventDefault();
+      const response = await fetch('http://localhost:4000/post', {
+        method: 'POST',
+        body: data,
+        credentials: 'include',
+      });
     }
+  
+    
 
     return (
         <div className="content-wrap">
@@ -65,4 +67,4 @@ export default function CreatePost() {
             </form>
         </div>
     );
-};
+}
