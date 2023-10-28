@@ -37,9 +37,18 @@ export default function CreatePost() {
         <div className="content-wrap">
             <Navbar/>
             <form>
-                <input type="title" placeholder={"Title"}/>
-                <input type="summary" placeholder={"Summary"}/>
-                <ReactQuill value={content} modules={modules} formats={formats} style={{marginBottpm:'50px'}}/>
+                <input type="title" 
+                        placeholder={"Title"} 
+                        onChange={ev => setTitle(ev.target.value)}/>
+                <input type="summary"
+                        placeholder={"Summary"}
+                        value={summary}
+                        onChange={ev => setSummary(ev.target.value)}/>
+                <ReactQuill value={content} 
+                    onChange={newValue => setContent(newValue)} 
+                    modules={modules} 
+                    formats={formats} 
+                    style={{marginBottpm:'50px'}}/>
                 <button style={{marginTop:'5px'}}>Create Post</button>
             </form>
         </div>
