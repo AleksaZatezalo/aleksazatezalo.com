@@ -69,7 +69,13 @@ app.post('/login', async (req,res) => {
 
 
   app.post('/post', async (req, res) => {
-    res.json(req.body);
+    const {title, summary, content} = req.body;
+    const postDoc = await Post.create({
+      title,
+      summary,
+      content
+    })
+    res.json(postDoc);
   });
 
 

@@ -33,6 +33,7 @@ export default function CreatePost() {
     const [title,setTitle] = useState('');
     const [summary,setSummary] = useState('');
     const [content,setContent] = useState('');
+    const [redirect, setRedirect] = useState(false);
     
     async function createNewPost(ev) {
         ev.preventDefault();
@@ -42,11 +43,19 @@ export default function CreatePost() {
           headers: {'Content-Type':'application/json'},
           credentials: 'include',
         });
+
+        if (response.ok) {
+            setRedirect(true);
+        }
     
       }
     
 
     // Make Flex box fixed height..... 
+
+    if (redirect) {
+        return <Navigate to={'/blog'}/>
+    }
 
     return (
 
