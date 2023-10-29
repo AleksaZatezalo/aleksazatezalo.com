@@ -1,15 +1,15 @@
+import {formatISO9075} from "date-fns"
 import "./Post.css"
-export default function Post(){
+export default function Post({title, summary,createdAt,content, author}){
     return(
         <div className='post'>
       
         <div className='texts'>
-          <h2>Mow your god damn lawn</h2>
+          <h2>{title}</h2>
           <p className='info'>
-            <a className='author'>Aleksa Zatezalo</a>
-            <time>2023-09</time>
+            <time>{formatISO9075(new Date(createdAt))}</time>
           </p>
-          <p className='summary'>Hello. This is a post about mowing your lawn. Do it for the wamen.</p>
+          <p className='summary'>{summary}</p>
         </div>
       </div>
     );

@@ -69,23 +69,23 @@ app.post('/login', async (req,res) => {
 
 
   app.post('/post', async (req, res) => {
-    const {title, summary, content} = req.body;
-    const postDoc = await Post.create({
-      title,
-      summary,
-      content
-    })
-    res.json(postDoc);
+    const {token} = req.cookies;
+    jwt.verify(token, secret, {}, async (err, info) => {
+      if (err) throw err;
+      const {title, summary, content} = req.body;
+      const postDoc = await Post.create({
+        title,
+        summary,
+        content,
+        author: info.id,
+      })
+      res.json(postDoc);
+    });
+
+   
   });
 
-
-  // app.post('/post', async (req, res) => {
-  //   console.log(req.body);
-  //   console.log(title, summary, content);
-  //   // Post.create({
-
-  //   // })
-  //   res.json({title, summary, content});
-  // });
-
+ app.get('/post', async (req, res) => {
+  res.json(await (Post.find().populate('author', ['username'])).sort({createdAt: -1}));
+ })
 app.listen(4000);
