@@ -2,10 +2,13 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const mongoose = require("mongoose");
+const Post = require("./modules/Post")
 const User = require('./modules/User');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const cookieParser = require('cookie-parser')
+const cookieParser = require('cookie-parser');
+const multer = require('multer');
+const fs = require('fs');
 
 const salt = bcrypt.genSaltSync(10);
 const secret = 'asd13ghdassdfdsfgdfgd';
@@ -63,5 +66,20 @@ app.post('/login', async (req,res) => {
       username,
     });
   });
+
+
+  app.post('/post', async (req, res) => {
+    res.json(req.body);
+  });
+
+
+  // app.post('/post', async (req, res) => {
+  //   console.log(req.body);
+  //   console.log(title, summary, content);
+  //   // Post.create({
+
+  //   // })
+  //   res.json({title, summary, content});
+  // });
 
 app.listen(4000);

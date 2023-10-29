@@ -33,18 +33,18 @@ export default function CreatePost() {
     const [title,setTitle] = useState('');
     const [summary,setSummary] = useState('');
     const [content,setContent] = useState('');
+    
     async function createNewPost(ev) {
-      const data = new FormData();
-      data.set('title', title);
-      data.set('summary', summary);
-      data.set('content', content);
-      ev.preventDefault();
-      const response = await fetch('http://localhost:4000/post', {
-        method: 'POST',
-        body: data,
-        credentials: 'include',
-      });
-    }    
+        ev.preventDefault();
+         const response = await fetch('http://localhost:4000/post', {
+          method: 'POST',
+          body: JSON.stringify({title, summary, content}),
+          headers: {'Content-Type':'application/json'},
+          credentials: 'include',
+        });
+    
+      }
+    
 
     // Make Flex box fixed height..... 
 
