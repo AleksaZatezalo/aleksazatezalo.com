@@ -17,6 +17,11 @@ app.use(cors({credentials:true, origin:"http://localhost:3000"}));
 app.use(express.json());
 app.use(cookieParser());
 
+app.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+     next();
+});
+
 mongoose.connect('mongodb+srv://zabumaphu:jwyPwYkOS5bwHPae@cluster0.kd2jcqv.mongodb.net/');
 // zabumaphu
 // jwyPwYkOS5bwHPae
@@ -94,4 +99,5 @@ app.post('/login', async (req,res) => {
   const postDoc = await Post.findById(id);
   res.json(postDoc);
  })
+
 app.listen(4000);
