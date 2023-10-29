@@ -23,7 +23,6 @@ function App() {
               <Route path="/blog" index element={<BlogPage/>} />
               <Route path="/about" index element={<AboutPage/>} />
               <Route path="/login" index element={<LoginPage/>}/>
-              <Route path="/register" index element={<RegisterPage/>}/>
               <Route path="/create" index element={<CreatePost/>}/>
               <Route path="/post/:id" index element={<PostPage/>}/>
               <Route path="/edit/:id" element={<EditPost />} />
