@@ -4,6 +4,7 @@ import BlogPage from "./Pages/BlogPage/BlogPage"
 import HomePage from './Pages/BlogPage/HomePage';
 import AboutPage from "./Pages/AboutPage/AboutPage"
 import LoginPage from './Pages/LoginPage/LoginPage';
+import EditPost from './Pages/EditPage/EditPage';
 import RegisterPage from './Pages/LoginPage/Register';
 import CreatePost from './Pages/CreatePage/CreatePost';
 import { UserContextProvider } from './UserContext';
@@ -25,6 +26,7 @@ function App() {
               <Route path="/register" index element={<RegisterPage/>}/>
               <Route path="/create" index element={<CreatePost/>}/>
               <Route path="/post/:id" index element={<PostPage/>}/>
+              <Route path="/edit/:id" index element={<EditPost/>}/>
             </Routes>
           </BrowserRouter>
         </UserContextProvider>
