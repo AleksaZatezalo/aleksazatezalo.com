@@ -13,14 +13,24 @@ const fs = require('fs');
 const salt = bcrypt.genSaltSync(10);
 const secret = 'asd13ghdassdfdsfgdfgd';
 
-app.use(cors({credentials:true, origin:"http://localhost:3000"}));
+const corsOpts = {
+  origin: 'http://localhost:3000',
+  credentials: true,
+  methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
+  allowedHeaders: ['Content-Type'],
+  exposedHeaders: ['Content-Type']
+};
+
+app.use(cors(corsOpts));
 app.use(express.json());
 app.use(cookieParser());
 
-app.use(function(req, res, next) {
-  res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
-     next();
-});
+//app.use(function(req, res, next) {
+  //res.header("Access-Control-Allow-Origin", "*");
+  //res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+  //res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+  //next();
+//});
 
 mongoose.connect('mongodb+srv://zabumaphu:jwyPwYkOS5bwHPae@cluster0.kd2jcqv.mongodb.net/');
 // zabumaphu
