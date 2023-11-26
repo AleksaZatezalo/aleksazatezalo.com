@@ -1,100 +1,64 @@
 import {useRef} from "react";
-import {FaBars, FaTimes, FaGraduationCap, FaAws} from "react-icons/fa";
+import {FaBars, FaTimes, FaGraduationCap, FaAws, FaAward} from "react-icons/fa";
+import {FiUsers} from "react-icons/fi"
 import {GiConwayLifeGlider} from "react-icons/gi"
 import {faTwitter, faMedium, faGithub, faGooglePlay, faLinkedinIn, faYoutube, faSpotify} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import"./About.css";
-import profile from "./profile.jpg";
+import ME from "./profile.jpg";
+import {VscFolderLibrary} from "react-icons/vsc"
+import Experiance from "../Experiance/Experiance";
+import Services from "./servises/Services"
+import Contact from "./contact/Contact"
+import Top from "./Header/Header"
+
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 function About() {
     return (
         <div>
+            <Top/>
 
             <div className='container'>
-
-                    <div className="row">
-                        <div className="column">
-                        <h1 className>About Aleksa</h1>
-
-                            <div class="profile">
-                                <img className="profile"
-                                    src={profile}
-                                    alt="Profile">
-                                </img>
-                            </div>
-                            <div className="row">
-                                
-                                <p className>
-                                            Aleksa Zatezalo is a cyber security reasercher & penetration tester.
-                                            You can find out about his latest reaserch and security projects here.
-                                            Outside of cyber security, Aleksa competes in jiu jitsu and enjoys jazz. <br />
-                                </p>
-                            </div>
-
-                            </div>
-                        <div className="column">
-                            <div className="experiance" width='100px'> 
-                            <VerticalTimeline lineColor="#5767aa">
-                                    <VerticalTimelineElement className="vertical-timeline-element--education" 
-                                    iconStyle={{background:'#29335C', color:'#fff'}} 
-                                    icon={<FaGraduationCap
-                                    date='2016-2021'/>}>
-                                        <h3>Got a Bacholers of Computer Science </h3>
-                                        <p>University of Toronto 2016 to 2021</p>
-                                    </VerticalTimelineElement>
-                                    <VerticalTimelineElement className="vertical-timeline-element--education" 
-                                    iconStyle={{background:'#29335C', color:'#fff'}} 
-                                    icon={<FaGraduationCap
-                                    date='2020'/>}>
-                                        <h3>Obtained the CEHv10</h3>
-                                        <p>Finished in December 2020</p>
-                                    </VerticalTimelineElement>
-                                    <VerticalTimelineElement className="vertical-timeline-element--education" 
-                                    iconStyle={{background:'#29335C', color:'#fff'}} 
-                                    icon={<FaAws
-                                    date='2021'/>}>
-                                        <h3>Became a Cloud Security Analyst</h3>
-                                        <p>Started at Deloitte September 2021</p>
-                                    </VerticalTimelineElement>
-                                    <VerticalTimelineElement className="vertical-timeline-element--education" 
-                                    iconStyle={{background:'#29335C', color:'#fff'}} 
-                                    icon={<GiConwayLifeGlider
-                                    date='2022'/>}>
-                                        <h3>Started Hacking</h3>
-                                        <p>January 2022</p>
-                                    </VerticalTimelineElement>
-                                </VerticalTimeline>
-                            </div>     
+            <section id="about">
+                <h5>Get To Know</h5>
+                <h2>About Me</h2>
+                <div className='container about__container'>
+                    <div className="about__me">
+                        <div className="about__me-image">
+                            <img src={ME} alt="About Me" className="profile"/>
                         </div>
                     </div>
+                    <div className='about__contnet'>
+                        <div className="about__cards">
+                            <article className='about__card'>
+                                <FaAward className='about__icon'/>
+                                <h5>Experiance:</h5>
+                                <small>1+ Years</small>
+                            </article>
+                            <article className='about__card'>
+                                <FiUsers className='about__icon'/>
+                                <h5>Clients:</h5>
+                                <small>2</small>
+                            </article>
+                            <article className='about__card'>
+                                <VscFolderLibrary className='about__icon'/>
+                                <h5>Projects:</h5>
+                                <small>2</small>
+                            </article>
+                        </div>
+                        <p>Aleksa is a Cloud Security Consultant. He has  a passion for Penetration Testing, Web and Mobile Development, and Secure Software Architecture. In his spare time he enjoys CTF Challanges, and trying to creating nerual networks that will secure Web Applications in the cloud.</p>
+                            <a href='#contact' className='btn btn-primary'>Let's Talk</a>
+                    </div>
+                </div>
+                <Experiance/>
+            </section>
                     
                 </div>
-                <div className="singleCol social-media-icons d-flex justify-content-evenly">
-                        <a href="https://twitter.com/ZatezaloAleksa">
-                            <FontAwesomeIcon icon={faTwitter} />
-                        </a>
-                        <a href="https://aleksazatezalo.medium.com/">
-                            <FontAwesomeIcon icon={faMedium} />
-                        </a>
-                        <a href="https://github.com/AleksaZatezalo">
-                            <FontAwesomeIcon icon={faGithub} />
-                        </a>
-                        <a href="https://play.google.com/store/apps/developer?id=Aleksa+Zatezalo">
-                            <FontAwesomeIcon icon={faGooglePlay} />
-                        </a>
-                        <a href="https://www.linkedin.com/in/aleksa-zatezalo-39a891150/">
-                            <FontAwesomeIcon icon={faLinkedinIn} />
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCs3htMGLR720HXC3jBNWGxA">
-                            <FontAwesomeIcon icon={faYoutube} />
-                        </a>
-                        <a href="https://open.spotify.com/user/lmzrdyu7mww7s1og3wsa3u1n5">
-                            <FontAwesomeIcon icon={faSpotify} />
-                        </a>
-                </div>
+                <Services/>
+                <Contact/>
             </div>
 
            
