@@ -42,9 +42,15 @@
 }
 
 .about__container{
+    margin-top: 6rem;
     display: grid;
     grid-template-columns: 35% 50%;
-    gap: 15%
+    gap: 15%;
+    margin-bottom:20rem;
+}
+
+h5 {
+    margin-top: 2rem;
 }
 
 .about__me{

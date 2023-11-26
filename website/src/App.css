@@ -151,12 +151,12 @@ a svg{
 }
 
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
+  --color-bg: #29335C;
+  --color-bg-variant: #29335C;
   --color-primary: #5767aa;
-  --color-primary-variant: rgba(77,181, 255, 0.4);
+  --color-primary-variant: #000000;
   --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-light: #eee;
 
   --transition: all 400ms ease;
 

@@ -5,8 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import"./About.css";
 import ME from "./profile.jpg";
 import {VscFolderLibrary} from "react-icons/vsc"
-import Experiance from "../Experiance/Experiance";
-import Contact from "./contact/Contact"
 import Top from "./Summary/Summary"
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
@@ -46,14 +44,11 @@ function About() {
                             </article>
                         </div>
                         <p>Aleksa is a Cloud Security Consultant. He has  a passion for Penetration Testing, Web and Mobile Development, and Secure Software Architecture. In his spare time he enjoys CTF Challanges, and trying to creating nerual networks that will secure Web Applications in the cloud.</p>
-                            <a href='#contact' className='btn btn-primary'>Let's Talk</a>
                     </div>
                 </div>
-                <Experiance/>
             </section>
                     
                 </div>
-                <Contact/>
             </div>
 
            

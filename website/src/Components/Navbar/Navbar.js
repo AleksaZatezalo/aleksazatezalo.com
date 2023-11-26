@@ -30,7 +30,6 @@ function logout() {
             <nav ref={navRef}>
                 <a href ="/about">About Aleksa</a> 
                 <a href ="/blog">Blog</a>
-                <a href ="/blog">Projects</a>
                 <a href ="/blog">Media</a>
                 {!username && (
                     <>
@@ -40,7 +39,6 @@ function logout() {
                 {username && (
                     <>
                         <a href ="/create">Add Post</a>
-                        <a href ="/create">Add Project</a>
                         <a href ="/create">Add Media</a>
                         <a href ="/create">Add Stats</a>
                         <a href="/blog" onClick={logout}>Logout</a>
