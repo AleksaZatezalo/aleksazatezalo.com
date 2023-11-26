@@ -7,6 +7,7 @@ import LoginPage from './Pages/LoginPage/LoginPage';
 import RegisterPage from './Pages/LoginPage/Register';
 import CreatePost from './Pages/CreatePage/CreatePost';
 import EditPost from './Pages/EditPost/EditPost';
+import MediaPage from './Pages/MediaPage/MediaPage';
 import { UserContextProvider } from './UserContext';
 import './App.css';
 import PostPage from './Pages/PostPage/PostPage';
@@ -26,6 +27,7 @@ function App() {
               <Route path="/create" index element={<CreatePost/>}/>
               <Route path="/post/:id" index element={<PostPage/>}/>
               <Route path="/edit/:id" element={<EditPost />} />
+              <Route path="/media" element={<MediaPage />} />
             </Routes>
           </BrowserRouter>
         </UserContextProvider>

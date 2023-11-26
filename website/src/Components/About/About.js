@@ -43,7 +43,7 @@ function About() {
                                 <small>2</small>
                             </article>
                         </div>
-                        <p>Aleksa is a Cloud Security Consultant. He has  a passion for Penetration Testing, Web and Mobile Development, and Secure Software Architecture. In his spare time he enjoys CTF Challanges, and trying to creating nerual networks that will secure Web Applications in the cloud.</p>
+                        <p>Aleksa is a Infrastructure Security Consultant. He has  a passion for Penetration Testing, Web and Mobile Development, and Secure Software Architecture. In his spare time he enjoys CTF Challanges, Secure Android Development, and Artificial Inteligence.</p>
                     </div>
                 </div>
             </section>
