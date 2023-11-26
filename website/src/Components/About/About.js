@@ -1,17 +1,13 @@
 import {useRef} from "react";
-import {FaBars, FaTimes, FaGraduationCap, FaAws, FaAward} from "react-icons/fa";
+import {FaAward} from "react-icons/fa";
 import {FiUsers} from "react-icons/fi"
-import {GiConwayLifeGlider} from "react-icons/gi"
-import {faTwitter, faMedium, faGithub, faGooglePlay, faLinkedinIn, faYoutube, faSpotify} from "@fortawesome/free-brands-svg-icons";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import"./About.css";
 import ME from "./profile.jpg";
 import {VscFolderLibrary} from "react-icons/vsc"
 import Experiance from "../Experiance/Experiance";
-import Services from "./servises/Services"
 import Contact from "./contact/Contact"
-import Top from "./Header/Header"
+import Top from "./Summary/Summary"
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -19,10 +15,10 @@ import 'react-vertical-timeline-component/style.min.css';
 function About() {
     return (
         <div>
-            <Top/>
 
             <div className='container'>
             <section id="about">
+                <Top/>
                 <h5>Get To Know</h5>
                 <h2>About Me</h2>
                 <div className='container about__container'>
@@ -57,7 +53,6 @@ function About() {
             </section>
                     
                 </div>
-                <Services/>
                 <Contact/>
             </div>
 

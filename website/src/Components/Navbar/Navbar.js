@@ -28,9 +28,10 @@ function logout() {
         <header>
             <h3>Welcome to Aleksa's Website</h3>
             <nav ref={navRef}>
-            
+                <a href ="/about">About Aleksa</a> 
                 <a href ="/blog">Blog</a>
-                <a href ="/about">About Aleksa</a>
+                <a href ="/blog">Projects</a>
+                <a href ="/blog">Media</a>
                 {!username && (
                     <>
                         <a href ="/login">Login</a>
@@ -38,7 +39,10 @@ function logout() {
                 )}
                 {username && (
                     <>
-                        <a href ="/create">Wright A New Post</a>
+                        <a href ="/create">Add Post</a>
+                        <a href ="/create">Add Project</a>
+                        <a href ="/create">Add Media</a>
+                        <a href ="/create">Add Stats</a>
                         <a href="/blog" onClick={logout}>Logout</a>
                     </>
                 )}

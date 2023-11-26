@@ -1,12 +1,5 @@
-header {
-    height: 100%;
-    padding: 7rem;
-    overflow: hidden;
-}
-
 .header__container{
     text-align: center;
-    height: 100%;
     position: relative;
 }
 
@@ -39,24 +32,20 @@ header {
 /* ============== Socials ================ */
 .header__socials {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    margin-top: 10px;
     gap: 0.8rem;
-    position: absolute;
     left: 0;
     bottom: 3rem;
+    justify-content: center;
+
 }
 
-.header__socials::after{
-    content: "";
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
-}
 
 /* ============== ME ================ */
 .me {
-    background: linear-gradient(var(--color-pimary), transparent);
+   
     width: 22rem;
     height: 30rem;
     left: calc(50% - 11rem);
