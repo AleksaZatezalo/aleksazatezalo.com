@@ -55,7 +55,6 @@ h5 {
 
 .about__me{
     width: 100%;
-    aspect-ratio: 1/1;
     border-radius: 2rem;
     background: linear-gradient(
         45deg,
@@ -64,7 +63,6 @@ h5 {
         transparent
     );
     display: grid;
-    place-items: center;
 }
 
 .about__me-image{
@@ -108,11 +106,12 @@ h5 {
 
 .about__card h5{
     font-size: 0.95rem;
+    color: #5767aa
 }
 
 .about__card small{
     font-size: 0.7rem;
-    color: var(--color-light);
+    color: #5767aa
 }
 
 .about__content p {

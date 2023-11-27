@@ -22,28 +22,28 @@ function About() {
                 <div className='container about__container'>
                     <div className="about__me">
                         <div className="about__me-image">
-                            <img src={ME} alt="About Me" className="profile"/>
+                            <img src={ME} alt="About Me"/>
                         </div>
                     </div>
                     <div className='about__contnet'>
                         <div className="about__cards">
                             <article className='about__card'>
                                 <FaAward className='about__icon'/>
-                                <h5>Experiance:</h5>
-                                <small>1+ Years</small>
+                                <h5>Indistry:</h5>
+                                <small>Consulting</small>
                             </article>
                             <article className='about__card'>
                                 <FiUsers className='about__icon'/>
-                                <h5>Clients:</h5>
-                                <small>2</small>
+                                <h5>Focus:</h5>
+                                <small>Infrastructure Security</small>
                             </article>
                             <article className='about__card'>
                                 <VscFolderLibrary className='about__icon'/>
-                                <h5>Projects:</h5>
-                                <small>2</small>
+                                <h5>Passion</h5>
+                                <small>Penetration Testing</small>
                             </article>
                         </div>
-                        <p>Aleksa is a Infrastructure Security Consultant. He has  a passion for Penetration Testing, Web and Mobile Development, and Secure Software Architecture. In his spare time he enjoys CTF Challanges, Secure Android Development, and Artificial Inteligence.</p>
+                        <p>Aleksa is a Infrastructure Security Consultant. He has  a passion for Penetration Testing, Web and Mobile Development, and Secure Software Architecture. In his spare time he enjoys CTF Challanges, Secure Android Development, and Artificial Inteligence. He graduated from the University of Toronto with a Bachelor's of Computer Science.</p>
                     </div>
                 </div>
             </section>

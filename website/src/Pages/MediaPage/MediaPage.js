@@ -8,9 +8,10 @@ export default function MediaPage() {
     <div className="page-container">
     <div className="content-wrap">
       <Navbar/>
-      <h1>Aleksa's Media Work</h1>
+      <h1>Aleksa's Media Work (Change)</h1>
       <h5>Add Cards for Media</h5>
       <h5>Resume Upload function</h5>
+      <h5>Colors, Descriptions and Photos on About</h5>
       <h5>Welcome Terminal Page: White Rabbit and Your IP</h5>
       <h5>Search and Pagenation for Blog and Media</h5>
       </div>

@@ -8,7 +8,6 @@ const Top = () => {
       <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Aleksa Zatezalo</h1>
-        <CT/>
         <div >
         <HeaderSocials/>
 
