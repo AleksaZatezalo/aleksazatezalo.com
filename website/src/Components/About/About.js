@@ -29,7 +29,7 @@ function About() {
                         <div className="about__cards">
                             <article className='about__card'>
                                 <FaAward className='about__icon'/>
-                                <h5>Indistry:</h5>
+                                <h5>Industry:</h5>
                                 <small>Consulting</small>
                             </article>
                             <article className='about__card'>
