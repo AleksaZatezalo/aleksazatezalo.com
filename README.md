@@ -19,5 +19,8 @@ A blog that displays markdown files as blog posts.
 Links to my github, linkedin, medium, twitter, and youtube.
 
 
-### Cool Welcome Prompt
-A terminal that displays a limited command prompt that allows users to 'navigate' the site.
+### Media Links
+Links to any media appearnces I have done in card format.
+
+### Cool Website Terminal Prompt
+Follow the white rabbit. 
