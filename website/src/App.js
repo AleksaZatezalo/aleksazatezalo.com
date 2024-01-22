@@ -4,7 +4,6 @@ import BlogPage from "./Pages/BlogPage/BlogPage"
 import HomePage from './Pages/AboutPage/HomePage';
 import AboutPage from "./Pages/AboutPage/AboutPage"
 import LoginPage from './Pages/LoginPage/LoginPage';
-import RegisterPage from './Pages/LoginPage/Register';
 import CreatePost from './Pages/CreatePage/CreatePost';
 import EditPost from './Pages/EditPost/EditPost';
 import { UserContextProvider } from './UserContext';
