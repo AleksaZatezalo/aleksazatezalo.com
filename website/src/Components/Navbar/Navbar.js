@@ -38,7 +38,6 @@ function logout() {
                 {username && (
                     <>
                         <a href ="/create">Add Post</a>
-                        <a href ="/create">Add Media</a>
                         <a href="/blog" onClick={logout}>Logout</a>
                     </>
                 )}
