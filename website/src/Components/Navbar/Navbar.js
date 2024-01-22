@@ -30,7 +30,6 @@ function logout() {
             <nav ref={navRef}>
                 <a href ="/about">About Aleksa</a> 
                 <a href ="/blog">Blog</a>
-                <a href ="/media">Media</a>
                 {!username && (
                     <>
                         <a href ="/login">Login</a>
