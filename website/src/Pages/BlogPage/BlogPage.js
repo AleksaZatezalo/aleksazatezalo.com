@@ -3,8 +3,11 @@ import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import Post from '../../Components/Post/Post';
 import './BlogPost.css'
+
 export default function BlogPage() {
   const [posts, setPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(10);
 
   useEffect(() => {
     fetch('http://localhost:4000/post').then(response => {
