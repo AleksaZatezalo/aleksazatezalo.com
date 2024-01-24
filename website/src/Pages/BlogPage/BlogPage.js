@@ -8,7 +8,7 @@ import './BlogPost.css'
 export default function BlogPage() {
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(5);
+  const [postsPerPage] = useState(5);
 
   useEffect(() => {
     fetch('http://localhost:4000/post').then(response => {
@@ -18,12 +18,19 @@ export default function BlogPage() {
     })
   }, []);
 
+  // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+
+  // Change page number
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  }
 
   return (
-    <>
     <div className="page-container">
     <div className="content-wrap">
       <Navbar/>
@@ -33,9 +40,9 @@ export default function BlogPage() {
       ))}
               
       </div>
-      <Pagenation postsPerPage={postsPerPage} totalPosts={posts.length}/>
+      <Pagenation postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate}/>
       <Footer/>
     </div>
-    </>
+
   );
 }
