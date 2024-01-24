@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import Post from '../../Components/Post/Post';
+import Pagenation from '../../Components/Pagenation/Pagenation'
 import './BlogPost.css'
 
 export default function BlogPage() {
@@ -30,7 +31,9 @@ export default function BlogPage() {
       {currentPosts.length > 0 && currentPosts.map(post => (
         <Post {...post}/>
       ))}
+              
       </div>
+      <Pagenation postsPerPage={postsPerPage} totalPosts={posts.length}/>
       <Footer/>
     </div>
     </>
