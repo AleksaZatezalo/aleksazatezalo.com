@@ -22,8 +22,6 @@ export default function BlogPage() {
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
-  const sleep = ms => new Promise(r => setTimeout(r, ms));
-
 
   // Change page number
   const paginate = (pageNumber) => {
