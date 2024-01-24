@@ -7,7 +7,7 @@ import './BlogPost.css'
 export default function BlogPage() {
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(10);
+  const [postsPerPage, setPostsPerPage] = useState(5);
 
   useEffect(() => {
     fetch('http://localhost:4000/post').then(response => {
@@ -16,13 +16,18 @@ export default function BlogPage() {
       })
     })
   }, []);
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
   return (
     <>
     <div className="page-container">
     <div className="content-wrap">
       <Navbar/>
       <h1>Aleksa Zatezalo's Blog</h1>
-      {posts.length > 0 && posts.map(post => (
+      {currentPosts.length > 0 && currentPosts.map(post => (
         <Post {...post}/>
       ))}
       </div>
