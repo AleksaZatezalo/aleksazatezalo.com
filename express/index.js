@@ -25,29 +25,7 @@ app.use(cors(corsOpts));
 app.use(express.json());
 app.use(cookieParser());
 
-//app.use(function(req, res, next) {
-  //res.header("Access-Control-Allow-Origin", "*");
-  //res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
-  //res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
-  //next();
-//});
-
 mongoose.connect('mongodb+srv://zabumaphu:jwyPwYkOS5bwHPae@cluster0.kd2jcqv.mongodb.net/');
-// zabumaphu
-// jwyPwYkOS5bwHPae
-// mongodb+srv://zabumaphu:jwyPwYkOS5bwHPae@cluster0.kd2jcqv.mongodb.net/
-
-// app.post('/register', async (req, res) => {
-//     const {username, password} = req.body;
-//     try{
-//         const userDoc = await User.create({username, 
-//             password:bcrypt.hashSync(password, salt)})
-//         res.json(userDoc);
-//     } catch(e) {
-//         res.status(400).json(e)
-//     }
-
-//});
 
 app.post('/login', async (req,res) => {
     const {username,password} = req.body;
