@@ -7,7 +7,6 @@ import ME from "./profile.jpg";
 import {VscFolderLibrary} from "react-icons/vsc"
 import Top from "./Summary/Summary"
 
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 function About() {

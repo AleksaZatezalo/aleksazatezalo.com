@@ -17,10 +17,3 @@ A blog that displays markdown files as blog posts.
 
 ### Personal Links
 Links to my github, linkedin, medium, twitter, and youtube.
-
-
-### Media Links
-Links to any media appearnces I have done in card format.
-
-### Cool Website Terminal Prompt
-Follow the white rabbit. 

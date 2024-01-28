@@ -7,8 +7,6 @@ const User = require('./modules/User');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const cookieParser = require('cookie-parser');
-const multer = require('multer');
-const fs = require('fs');
 
 const salt = bcrypt.genSaltSync(10);
 const secret = 'asd13ghdassdfdsfgdfgd';
