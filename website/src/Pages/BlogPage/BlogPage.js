@@ -18,27 +18,16 @@ export default function BlogPage() {
     })
   }, []);
 
-  // Get current posts
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
-
-  // Change page number
-  const paginate = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  }
-
   return (
     <div className="page-container">
     <div className="content-wrap">
       <Navbar/>
       <h1>Aleksa Zatezalo's Blog</h1>
-      {currentPosts.length > 0 && currentPosts.map(post => (
+      {posts.length > 0 && posts.map(post => (
         <Post {...post}/>
       ))}
               
       </div>
-      <Pagenation postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate}/>
       <Footer/>
     </div>
 
