@@ -9,7 +9,3 @@ The website will include the following public pages:
 ### About
 
 A small paragraph about me that also displays my photo and the certificates I hold.
-
-### Contact
-
-A page that describes how to contact me and (potentially) contains PGP keys.
