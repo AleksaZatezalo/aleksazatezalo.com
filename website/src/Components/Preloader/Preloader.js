@@ -9,10 +9,7 @@ const Preloader = () => {
   return (
     <div className='preloader'>
         <div className='text-container'>
-            <span>Aleksa Zatezalo: </span>
-            <span>Hacker, </span>
-            <span>Developer, </span>
-            <span>Consultant.</span>
+            <span>Aleksa Zatezalo: Hacker, Developer, Researcher</span>
         </div>
     </div>
   )

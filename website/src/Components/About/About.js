@@ -29,20 +29,20 @@ function About() {
                             <article className='about__card'>
                                 <FaAward className='about__icon'/>
                                 <h5>Industry:</h5>
-                                <small>Consulting</small>
+                                <small>Security Engineering</small>
                             </article>
                             <article className='about__card'>
                                 <FiUsers className='about__icon'/>
                                 <h5>Focus:</h5>
-                                <small>Infrastructure Security</small>
+                                <small>Application Security</small>
                             </article>
                             <article className='about__card'>
                                 <VscFolderLibrary className='about__icon'/>
                                 <h5>Passion</h5>
-                                <small>Penetration Testing</small>
+                                <small>Red Teaming</small>
                             </article>
                         </div>
-                        <p>Aleksa is a Infrastructure Security Consultant. He has  a passion for Penetration Testing, Web and Mobile Development, and Secure Software Architecture. In his spare time he enjoys CTF Challanges, Secure Android Development, and Artificial Inteligence. He graduated from the University of Toronto with a Bachelor's of Computer Science.</p>
+                        <p>Aleksa is a Security Engineer. He has  a passion for Penetration Testing, Web and Mobile Development, and Secure Software Architecture. In his spare time he enjoys CTF Challanges, Secure Android Development, and Artificial Inteligence. He graduated from the University of Toronto with a Bachelor's of Computer Science.</p>
                     </div>
                 </div>
             </section>
